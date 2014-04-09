@@ -1,4 +1,4 @@
-scripts
+SCRIPTS
 =======
 
 Some scripts I use

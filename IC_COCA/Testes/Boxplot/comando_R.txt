@@ -1,0 +1,77 @@
+
+
+
+empr <- read.table("ACKLEY_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_ackley.pdf")
+boxplot(empr , data=empr, main="F3", xlab="MÉTODOS", ylab="FO")
+dev.off()
+
+empr <- read.table("GRIEWANK_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_griewank.pdf")
+boxplot(empr , data=empr, main="F2", xlab="MÉTODOS", ylab="FO" , log="y")
+dev.off()
+
+empr <- read.table("RASTRIGIN_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_rastrigin.pdf")
+boxplot(empr , data=empr, main="F0", xlab="MÉTODOS", ylab="FO" , log="y")
+dev.off()
+
+
+
+empr <- read.table("SCHAFFER_F7_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_schaffer_f7.pdf")
+boxplot(empr , data=empr, main="F1", xlab="MÉTODOS", ylab="FO")
+dev.off()
+
+
+
+empr <- read.table("G_SCHWEFELS_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250__schwefels.pdf")
+boxplot(empr , data=empr, main="F8", xlab="MÉTODOS", ylab="FO")
+dev.off()
+
+
+
+empr <- read.table("MPE_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_mpe.pdf")
+boxplot(empr , data=empr, main="F6", xlab="MÉTODOS", ylab="FO" , log="y")
+dev.off()
+
+
+
+empr <- read.table("ROSENBROCK_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_rosenbrock.pdf")
+boxplot(empr , data=empr, main="F4", xlab="MÉTODOS", ylab="FO", log="y")
+dev.off()
+
+
+
+empr <- read.table("SCHAFFER_F6_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_schaffer_f6.pdf")
+boxplot(empr , data=empr, main="F7", xlab="MÉTODOS", ylab="FO")
+dev.off()
+
+
+empr <- read.table("SPHERE_data_boxplot.out", header=TRUE)
+str(empr)
+head(empr)
+pdf(file="boxplot_250_sphere.pdf")
+boxplot(empr , data=empr, main="F5", xlab="MÉTODOS", ylab="FO", log="y" )
+dev.off()
+
